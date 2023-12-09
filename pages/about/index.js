@@ -6,7 +6,7 @@ import Cricles from "../../components/Circles";
 
 import { motion } from 'framer-motion'
 
-import { FadeIn, fadeIn } from '../../variants'
+import { fadeIn } from '../../variants'
 import CountUp from "react-countup";
 
 
@@ -17,41 +17,30 @@ const aboutData = [
     info: [
       {
         title: 'Web Development',
+      },
+      {
         icons: [
+          <Image key="html" src={'/HTML.svg'} width={350} height={350} className="h-350 w-350" alt="" />,
+          <Image key="css"  src={'/css.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="js" src={'/js.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="ts" src={'/ts.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="git" src={'/git.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="github" src={'/github.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="graphql" src={'/graphql.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="next.js" src={'/next.js.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          
+
 
         ],
       },
       {
         icons: [
-
-          <Image key={index} src={'/HTML.svg'} width={350} height={350} className="h-350 w-350" alt="" />,
-          <Image key={index} src={'/css.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/js.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/ts.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/git.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/github.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/graphql.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/next.js.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-
-
-
-        ],
-      },
-      {
-        icons: [
-
-        ],
-      },
-      {
-        icons: [
-          <Image key={index} src={'/next.js.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/postgresql.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/python.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/react.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/tailwindcss.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key={index} src={'/figma.svg'} width={250} height={250} alt="" className="h-250 w-250" />,
-          <Image key={index} src={'/sanity.io.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-
+          <Image key="postgresql" src={'/postgresql.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="python" src={'/python.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="react" src={'/react.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="tailwind" src={'/tailwindcss.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="figma" src={'/figma.svg'} width={250} height={250} alt="" className="h-250 w-250" />,
+          <Image key="sanity" src={'/sanity.io.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
 
 
         ],
@@ -154,8 +143,7 @@ const About = () => {
         </motion.div>
         {/* info */}
         {/* about */}
-        <motion.div className="flex-col w-full xl:max-w-[48%] h-[480px] flex xl:flex" variants={fadeIn('left',0.5)} initial="hidden" animate='show'transition={{duration:1, ease:'easeInOut'}}
-exit='hidden'>
+        <motion.div className="flex-col w-full xl:max-w-[48%] h-[480px] flex xl:flex" variants={fadeIn('left',0.5)} initial="hidden" animate='show'transition={{duration:1, ease:'easeInOut'}} exit='hidden'>
           <div className="flex gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
