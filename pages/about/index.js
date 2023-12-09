@@ -64,7 +64,7 @@ const aboutData = [
     title: 'About Me!',
     info: [
       {
-        title:"I am a passionate individual proficient in Next.js, React, Tailwind CSS, PostgreSQL, TypeScript, JavaScript, HTML, CSS, Python, GraphQL, Sanity.io, and many other modern technologies. After completing my matriculation, I dedicated myself to enhancing my skills through hard work. I am pleased to have gained expertise in frameworks like Next.js, and I have a command over design tools such as Adobe Photoshop, Illustrator, Figma, and Canva. I can also handle essential tools like Postman and Git exceptionally well. I have had the opportunity to elevate my capabilities in the digital landscape, and I am ready to test my skills with every new challenge. My goal is to continually improve my passion and strive to showcase my creativity and technical prowess in every project."
+        title:" Dedicated professional proficient in Next.js, React, Tailwind CSS, PostgreSQL, and TypeScript. Specializing in Next.js, I bring a unique blend of creativity and technical expertise, using tools like Figma. Well-versed in Postman and Git, I thrive on digital challenges, consistently pursuing improvement and eagerly contributing to innovative projects."
 
       
       }
@@ -75,7 +75,7 @@ const aboutData = [
     title: 'Skill Info',
     info: [
       {
-        title: 'Embarking on my web development journey with MITI in 2023 has been a transformative experience, shaping my skills and understanding of the digital landscape. As I immerse myself in the world of coding, design, and technology, the PIAIC Meta Verse Web 3.0 program adds a futuristic dimension to my learning. In the dynamic realm of the metaverse and Web 3.0, PIAIC has become my guiding light, providing me with insights and expertise that extend beyond conventional boundaries. From Next.js and React to the intricacies of Tailwind CSS and PostgreSQL, I am not just learning to code; I am crafting the future of the web.        The journey with PIAIC is not merely educational; it is an exploration of the limitless possibilities of the digital universe. As I delve into the intricacies of AI, Web 3.0, and the metaverse, every line of code becomes a brushstroke in the canvas of innovation. With MITI as my foundation and PIAIC as my guide, I am not just learning web development; I am shaping the future of the digital world, one line of code at a time.',
+        title: 'My transformative web development journey with MITI in 2023 is enhanced by PIAIC Meta Verse Web 3.0 program. Beyond coding, it explores Next.js to PostgreSQL, shaping my understanding of the metaverse. PIAIC is my guiding light into AI and innovation, as I craft the digital future with MITI foundation.',
         
       }
     ],
@@ -116,9 +116,9 @@ const About = () => {
         {/* text */}
         <motion.div className="flex-1 flex-col justify-center" variants={fadeIn('down', 0.5)} initial="hidden" animate='show' transition={{ duration: 1, ease: 'easeInOut' }}
           exit='hidden'>
-          <h2 className="text-3xl  xl:mx-0 mb-4 xl:mb-3 px-2 xl:px-0">
+          <h2 className="text-3xl pt-6  xl:mx-0 mb-4 xl:mb-3 px-2 xl:px-0">
             M.Hasan Baig:<span className="text-accent"> Crafting Digital</span> Dreams with the Alchemy of Next.js and Tailwind Mastery. 🚀✨</h2>
-          <p className="max-w-[500px] mx-auto xl:mx-0 mb-12 xl:mb-4 px-2 xl:px-0">
+          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-4 px-2 xl:px-0">
             Hasan, a dynamic full-stack web developer, excels in Next.js and Tailwind CSS, crafting unparalleled user experiences. His mastery spans frontend to backend, creating responsive and visually stunning applications. Committed to pushing boundaries, Hasan stays ahead in the evolving digital landscape.</p>
           {/* counter */}
           <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
@@ -138,7 +138,7 @@ const About = () => {
                 <div className="text-sm uppercase tracking-[1px leading-[1.4] max-w-[100px]"> Web Development Project</div>
               </div>
               {/* all project */}
-              <div className="relative flex-1 after:w-[1px] after:h-ful after:absolute after:top-0 after: right-0">
+              <div className="relative flex-1 after:w-[1px] after:h-full after:absolute after:top-0 after: right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent md-2">
                   <CountUp start={0} end={13} duration={2} />+
                 </div>
@@ -162,7 +162,7 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${index === itemIndex && "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"} 
+                  className={`${index === itemIndex && "text-accent after:w-[100%] text-sm after:bg-accent after:transition-all after:duration-300"} 
             cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -174,7 +174,7 @@ const About = () => {
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
-                <div key={itemIndex} className="flex flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
+                <div key={itemIndex} className="flex flex-1 flex-col md:flex-row text-[15px] xl:text-lg max-w-max gap-x-2 items-center text-white/60">
                   {/* title */}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex"></div>
