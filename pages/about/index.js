@@ -8,7 +8,20 @@ import { motion } from 'framer-motion'
 
 import { fadeIn } from '../../variants'
 import CountUp from "react-countup";
-
+import html from '../../public/HTML.svg'
+import css from '../../public/CSS.svg'
+import js from '../../public/JS.svg'
+import ts from '../../public/TS.svg'
+import github from '../../public/GitHub.svg'
+import git from '../../public/git.svg'
+import graphql from '../../public/GraphQL.svg'
+import nextjs from '../../public/NEXT.JS.svg'
+import postgresql from '../../public/PostgreSQL.svg'
+import python from '../../public/Python.svg'
+import react from '../../public/React.svg'
+import tailwindcss from '../../public/TailwindCSS.svg'
+import figma from '../../public/Figma.svg'
+import sanity from '../../public/Sanity.io.svg'
 
 //  data
 const aboutData = [
@@ -20,14 +33,14 @@ const aboutData = [
       },
       {
         icons: [
-          <Image key="html" src={'/HTML.svg'} width={350} height={350} className="h-350 w-350" alt="" />,
-          <Image key="css"  src={'/css.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="js" src={'/js.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="ts" src={'/ts.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="git" src={'/git.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="github" src={'/github.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="graphql" src={'/graphql.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="next.js" src={'/next.js.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="html" src={html} width={350} height={350} className="h-350 w-350" alt="" />,
+          <Image key="css"  src={css} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="js" src={js} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="ts" src={ts} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="git" src={git} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="github" src={github} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="graphql" src={graphql} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="next.js" src={nextjs} width={350} height={350} alt="" className="h-350 w-350" />,
           
 
 
@@ -35,12 +48,12 @@ const aboutData = [
       },
       {
         icons: [
-          <Image key="postgresql" src={'/postgresql.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="python" src={'/python.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="react" src={'/react.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="tailwind" src={'/tailwindcss.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
-          <Image key="figma" src={'/figma.svg'} width={250} height={250} alt="" className="h-250 w-250" />,
-          <Image key="sanity" src={'/sanity.io.svg'} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="postgresql" src={postgresql} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="python" src={python} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="react" src={react} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="tailwind" src={tailwindcss} width={350} height={350} alt="" className="h-350 w-350" />,
+          <Image key="figma" src={figma} width={250} height={250} alt="" className="h-250 w-250" />,
+          <Image key="sanity" src={sanity} width={350} height={350} alt="" className="h-350 w-350" />,
 
 
         ],
